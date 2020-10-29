@@ -1,0 +1,117 @@
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+#toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+
+#toolbar span {
+  margin: 0 8px;
+}
+
+.buttom-menu{ 
+  margin-left: 30px;
+}
+
+#home{
+  margin-left: 30px;
+  margin-right: 0;
+}
+
+#entrar{
+  position: absolute;
+  right: 20px;
+}
+  
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+#divNav{
+  position: relative;
+  position: center 0 auto;
+}
+
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #334953;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #cfd8dc;
+}
+nav a.active {
+  color: #039be5;
+}
+
+#content{
+  max-height: 100%;
+  margin-top: 60px;
+}
+
+#price{
+  position: relative;
+  font-size: 40px;
+  padding: 0;
+  margin: 0px;
+  width: 200px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 60px;
+}
+
+h1{
+  margin: 0;
+}
+
+#addCartIcon{
+  font-size: 40px;
+  padding: 10px;
+}
+
+#cartBottom{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  right: 60px;
+  bottom: 15px;
+}
