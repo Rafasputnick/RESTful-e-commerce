@@ -1,22 +1,28 @@
-<!-- Toolbar -->
 <div id="toolbar">
-  <a id = "home">
-    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+  <a id = "home" routerLink=" ">
+    <mat-icon>home</mat-icon>
   </a>
-  <span>E-commerce</span>
+  <h3>E-commer </h3>
+  <p> &copy; </p>
+  <h3> e</h3>
 
   <button class = "buttom-menu" mat-button [matMenuTriggerFor]="menu">Hardware</button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item routerLink="/produtos">Processadores</button>
-    <button mat-menu-item>Placa mãe</button>
+    <button mat-menu-item routerLink="/produtos/processador">Processadores</button>
+    <button mat-menu-item routerLink="/produtos/placa_mae">Placa mãe</button>
+    <button mat-menu-item routerLink="/produtos">Todos</button>
   </mat-menu>
   <div id="entrar">
-    <button mat-button>Entrar</button>
+    <button mat-button id="cartBottom" routerLink="/cart">
+      <span class="material-icons" id="CartIcon">
+        shopping_cart
+      </span>
+    </button>
+    <button mat-button id="entrarBottom" routerLink="/pre_cadastro">Entrar</button>
   </div>
 </div>
-
-<div id= "content"> 
-  <router-outlet></router-outlet>
+<div id="content"> 
+  <router-outlet > </router-outlet>  
 </div>
 
 

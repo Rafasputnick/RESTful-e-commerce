@@ -1,0 +1,45 @@
+#div-login{
+    background-color: #1976d2;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    padding: 60px;
+    padding-right: 0;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+}
+  
+.example-full-width {
+  width: 100%;
+}
+
+mat-label{
+  color: white;
+}
+
+.mat-input-element{
+  caret-color: white;
+}
+
+#buttom-login{
+  border: dotted 1px black;
+  position: absolute;
+  right: 200px;
+  top: 115px;
+  width: 400px;
+  height: 100px;
+  color:  #1976d2;
+  font-size: 60px;
+  line-height: 100px;
+  background-color: white;
+  border-radius: 15px;
+}

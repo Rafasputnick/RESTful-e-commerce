@@ -1,0 +1,24 @@
+button{
+    position: relative;
+    margin-top: 300px;
+    width: 400px;
+    height: 100px;
+    color: white;
+    font-size: 60px;
+    line-height: 100px;
+    background-color: #1976d2;
+    margin-left: 175px;
+    border-radius: 15px;
+}
+
+#buttom-olhar{
+    background-color: white;
+    border: 1px;
+    color: gray;
+    width: 450px;
+}
+
+#buttom-login{
+    text-shadow: 2px 2px black;
+    border: 2px;
+}
