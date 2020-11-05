@@ -43,3 +43,7 @@ mat-label{
   background-color: white;
   border-radius: 15px;
 }
+
+input internal-autofill-selected{
+  background-color: #1976d2 !important;
+}

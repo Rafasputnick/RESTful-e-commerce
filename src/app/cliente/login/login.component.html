@@ -2,14 +2,14 @@
     <form class="example-form">
         <mat-form-field class="example-full-width">
             <mat-label>Email</mat-label>
-            <input matInput placeholder="Ex. email@example.com">
+            <input matInput placeholder="Ex. email@example.com" [(ngModel)]="user.email" name="email">
         </mat-form-field>
         <mat-form-field class="example-full-width">
             <mat-label>Senha</mat-label>
-            <input matInput type="password">
+            <input matInput type="password" [(ngModel)]="user.senha" name="senha">
         </mat-form-field>
     </form>
 
-    <button mat-raised-button id = "buttom-login">Entre</button>
+    <button mat-raised-button id = "buttom-login" (click) = "login();">Entre</button>
 
 </div>

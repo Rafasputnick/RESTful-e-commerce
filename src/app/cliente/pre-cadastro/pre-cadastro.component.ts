@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-pre-cadastro',
   templateUrl: './pre-cadastro.component.html',

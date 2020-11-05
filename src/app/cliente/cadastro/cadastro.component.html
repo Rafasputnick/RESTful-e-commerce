@@ -1,17 +1,17 @@
 <div id="div-login"> 
-    <form class="example-form">
+    <form class="example-form"  *ngIf="cliSel">
         <mat-form-field class="example-full-width">
             <mat-label>Nome</mat-label>
-            <input matInput  [(ngModel)]="cliSel.nome">
+                <input matInput [(ngModel)]="cliSel.nome" name="nome">   
         </mat-form-field>
         <mat-form-field class="example-full-width">
             <mat-label>Email</mat-label>
-            <input matInput [(ngModel)]="cliSel.email" placeholder="Ex. email@example.com">
+                <input matInput [(ngModel)]="cliSel.email" name="email" placeholder="Ex. email@example.com">
         </mat-form-field>
         <mat-form-field class="example-full-width">
             <mat-label>Senha</mat-label>
-            <input matInput type="password"  [(ngModel)]="cliSel.senha">
-        </mat-form-field>
+                <input matInput type="password" [(ngModel)]="cliSel.senha" name="senha">
+            </mat-form-field>
     </form>
 
     <button mat-raised-button id = "buttom-cadastro" (click) = "addClient()">Cadastre-se</button>

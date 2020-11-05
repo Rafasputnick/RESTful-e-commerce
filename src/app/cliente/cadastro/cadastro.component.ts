@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import {Client} from 'src/app/cliente/models/client';
 import { ServicoClienteService } from '../services/servico-cliente.service';
 
@@ -9,23 +10,26 @@ import { ServicoClienteService } from '../services/servico-cliente.service';
 })
 export class CadastroComponent implements OnInit {
 
-  client: Client;
-  cliSel = null;
+  cliSel: Client ;
 
-  constructor(private servicoCliente: ServicoClienteService ) { }
+  constructor(private servicoCliente: ServicoClienteService, private router: Router ) { }
 
   ngOnInit(): void {
+    this.cliSel = new Client();
   }
 
-  onSelect(cli: Client): void {
-    this.cliSel = cli;
+  private _camposInvalidos(): boolean{
+    return !this.cliSel.email || !this.cliSel.nome || !this.cliSel.senha;
   }
 
   addClient(): void{
-    this.cliSel = new Client();
+    if (this._camposInvalidos()){
+      alert('Preencha os campos');
+      return;
+    }
     this.servicoCliente.addClient(this.cliSel).subscribe(
       () => {
-        alert('Cliente inserido com sucesso');
+        this.router.navigate(['/login']);
       }
     );
   }
