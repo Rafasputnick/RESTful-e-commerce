@@ -17,10 +17,12 @@ import { LoginComponent } from './cliente/login/login.component';
 import { CartComponent } from './cliente/cart/cart.component';
 import { UserLogadoComponent } from './cliente/user-logado/user-logado.component';
 
+// component de home
+import { HomeComponent } from './main-component/home/home.component';
 
 // vetor que faz a construção das rotas com param (path e pathMath) url linkada ao componente ideal
 const routes: Routes = [
-  { path: '', redirectTo: '/pre_cadastro', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'pre_cadastro', component: PreCadastroComponent },
   { path: 'produtos', component: ProdutosComponent},
   { path: 'produtos/processador', component: ProcessadorComponent },
@@ -29,6 +31,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'cart', component: CartComponent },
   { path: 'userLogado', component: UserLogadoComponent },
+  { path: 'home', component: HomeComponent },
 ];
 
 @NgModule({

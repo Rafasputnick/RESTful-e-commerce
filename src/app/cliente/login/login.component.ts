@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MainComponent } from 'src/app/main-component/app.component';
 import { Client } from '../models/client';
 import { ServicoClienteService } from '../services/servico-cliente.service';
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
 
   user: Client;
 
-  constructor(private servicoCliente: ServicoClienteService, private router: Router ) { }
+  constructor(private servicoCliente: ServicoClienteService, private router: Router, private r: MainComponent) { }
 
   ngOnInit(): void {
     this.user = new Client();
@@ -36,8 +36,9 @@ export class LoginComponent implements OnInit {
             localStorage.setItem('username', userLog.nome);
             // altera o valor da div entrarUser
             document.getElementById('entrarUser').innerHTML = 'Olá, ' + localStorage.getItem('username');
+            this.r.rota = '/userLogado';
           }
-          this.router.navigate(['/userLogado']);
+          this.router.navigate(['/produtos']);
         }else {
           alert('Usuário ou senha incorretos ');
         }

@@ -25,6 +25,7 @@ import { CadastroComponent } from './cliente/cadastro/cadastro.component';
 import { LoginComponent } from './cliente/login/login.component';
 import { CartComponent } from './cliente/cart/cart.component';
 import { UserLogadoComponent } from './cliente/user-logado/user-logado.component';
+import { HomeComponent } from './main-component/home/home.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { UserLogadoComponent } from './cliente/user-logado/user-logado.component
     CadastroComponent,
     LoginComponent,
     CartComponent,
-    UserLogadoComponent
+    UserLogadoComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

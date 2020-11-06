@@ -34,7 +34,7 @@ mat-label{
   border: dotted 1px black;
   position: absolute;
   right: 200px;
-  top: 115px;
+  top: 65px;
   width: 400px;
   height: 100px;
   color:  #1976d2;
@@ -43,7 +43,14 @@ mat-label{
   background-color: white;
   border-radius: 15px;
 }
-
-input internal-autofill-selected{
-  background-color: #1976d2 !important;
+#buttom-cad{
+  position: absolute;
+  right: 240px;
+  top: 200px;
+  width: 320px;
+  height: 50px;
+  color:  white;
+  font-size: 20px;
+  line-height: 50px;
+  background-color: transparent;
 }

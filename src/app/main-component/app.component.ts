@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Client } from '../cliente/models/client';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +6,6 @@ import { Client } from '../cliente/models/client';
   styleUrls: ['./app.component.css']
 })
 export class MainComponent {
+  rota = '/login';
   title = 'ecommerce';
 }

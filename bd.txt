@@ -1,7 +1,0 @@
-CREATE TABLE cliente (
-	cliente_id int NOT NULL AUTO_INCREMENT,
-	nome varchar(10) NOT NULL,
-	email varchar(20) NOT NULL,
-	senha varchar(20) NOT NULL,
-     PRIMARY KEY (cliente_id)
-);

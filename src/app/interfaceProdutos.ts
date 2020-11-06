@@ -1,10 +1,11 @@
 // interface utilizada em produtos
 
 export interface Produtos{
-    id: number;
-    tipo: string;
-    nome: string;
-    subNome: string;
+    idProd: number;
+    titulo: string;
+    subTitulo: string;
     descricao: string;
     preco: number;
+    tipoProduto: string;
+    img: Blob;
 }
